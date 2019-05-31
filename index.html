@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="Pokemon">
+	<head>
+		<!-- Script de JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Enlace de css -->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<title>Pokedex</title>
+	</head>
+	<!-- Controlador de script.js -->
+	<body ng-controller="pokedex">
+
+		<!--nombres de pokemon-->
+		<div class="cuadro" ng-repeat="poke in pokedexB">
+		<p>{{poke.data.name}}</p>
+		</div>
+
+		<!-- Script de Angular.js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		<!-- Enlace de Sccript.js -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
