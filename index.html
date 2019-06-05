@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html ng-app="Pokemon">
 	<head>
-		<!-- Script de JQuery -->
+		<!-- Script Jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<!-- Enlace de css -->
+		<!-- Script Angular.js -->
+	     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		<!--Sccript.js -->
+		<script src="js/script.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- link de css -->
 		<link rel="stylesheet" href="css/style.css">
-		
-		<title>Pokedex</title>
+		<!--link icono-->
+		<link rel="icon" href="https://wallpapercave.com/wp/wp2403363.png">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   		
+ 	
+	<title>Pokedex</title>
 	</head>
 	<!-- Controlador de script.js -->
 	<body ng-controller="pokedex">
-
 		<!--nombres de pokemon-->
+	<div class="container">
+     <div class="row">
+       <div class="col-md-12 text-center header">
+         <h1 class="title">POKEDEXB</h1>
 		<div class="cuadro" ng-repeat="poke in pokedexB">
 		<p>{{poke.data.name}}</p>
+		<!--pokemon in pokedexB-->
+		 <div class="container">
+       <div class="row">
+         <div class="col-md-3 text-center col-sm-4" ng-repeat="Pokemon in pokedexB">
+           <div class="divInfo">
+             <img class="pokePicture" src="{{Pokemon.data.sprites.front_default}}">
+           </div>
+           <div class="pokeName">{{Pokemon.data.name}}</div>
+         </div>
+       </div>
+     </div>
+   </div>
 		</div>
-
-		<!-- Script de Angular.js -->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-		<!-- Enlace de Sccript.js -->
-		<script src="js/script.js"></script>
+	   </div>
+     </div>
+   </div>
+		
 	</body>
+</html>
+    
+ </body>
 </html>
