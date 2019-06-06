@@ -18,17 +18,18 @@
 	</head>
 	<!-- Control de script.js -->
 	<body ng-controller="pokedex">
-		<!--nombres de pokemon-->
+		<!--nombre pokemon-->
 	<div class="container text-center">
      <div class="row">
          <h1 class="title">POKEDEXB</h1>
-		<p>{{poke.data.name}}</p>
-		<!--pokemon in pokedexB-->
+		<!--contenedor pokedexB-->
 		 <div class="container">
        <div class="row">
+       	<!--cuadropoke-->
          <div class="col-md-3 text-center cuadropoke" ng-repeat="Pokemon in pokedexB">
            <div class="divInfo">
              <img class="pokePicture" src="{{Pokemon.data.sprites.front_default}}">
+           <!--nombre pokemon-->
            <div class="pokeName">{{Pokemon.data.name}}</div>
            </div>
  		 </div>
