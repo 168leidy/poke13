@@ -1,0 +1,20 @@
+body{
+	background-image:url("https://66.media.tumblr.com/efd90fe34d2c505e73912e2bde2a2b89/tumblr_pnqxi4vucE1usc9y9o1_500.gif");no-repeat
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.cuadropoke{
+	border: solid 4px;
+	border-color: #B44DCD;
+	background-image:url("https://i.ytimg.com/vi/jglmQQeK5SA/maxresdefault.jpg");
+}
+img{
+	width: 130px;
+	height: 120px;
+}
+h1{
+	font-weight: bold;
+	background-color: #B44DCD;
+	font-size: 22px;
+
+}
